@@ -8,21 +8,21 @@ const Title: React.FC = () => {
           <h1 className="text-6xl md:text-9xl lg:text-[10rem] font-bold leading-tight overflow-hidden">
             <span className="inline-flex flex-col h-[1.6em] overflow-hidden ">
               <ul className="block animate-text-slide text-left leading-tight space-y-6 min-w-fit">
-                <li className=" flex items-center">Designer</li>
-                <li className="flex items-center">Artist</li>
-                <li className=" flex items-center">Frontend</li>
-                <li className=" flex items-center">Fullstack</li>
-                <li className="flex items-center">Innovator</li>
-                <li className=" flex items-center">Leader</li>
-                <li className="flex items-center">Engineer</li>
-                <li className="flex items-center" aria-hidden="true">Designer</li>
+                <li className=" flex items-center font-abrilFatface font-normal">Designer</li>
+                <li className="flex items-center font-abrilFatface font-normal">Artist</li>
+                <li className=" flex items-center font-abrilFatface font-normal">Frontend</li>
+                <li className=" flex items-center font-abrilFatface font-normal">Fullstack</li>
+                <li className="flex items-center font-abrilFatface font-normal">Innovator</li>
+                <li className=" flex items-center font-abrilFatface font-normal">Leader</li>
+                <li className="flex items-center font-abrilFatface font-normal">Engineer</li>
+                <li className="flex items-center font-abrilFatface font-normal" aria-hidden="true">Designer</li>
 
               </ul>
             </span>
           </h1>
           <div className="ml-4">
-            <p className="text-md sm:text-lg">in San Diego,</p>
-            <p className="text-md sm:text-lg">California 🌊</p>
+            <p className="text-md sm:text-lg font-medium">in San Diego,</p>
+            <p className="text-md sm:text-lg font-medium">California 🌊</p>
           </div>
         </div>
         <h2 className="text-4xl md:text-7xl lg:text-8xl xl:text-9xl font-light italic mt-4 text-right">/Software Engineer</h2>

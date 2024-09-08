@@ -46,7 +46,9 @@ export default {
       },
     },
     
-   
+    fontFamily: {
+      'abrilFatface': ['Abril Fatface'],
+    }
     
   },
   plugins: [],
