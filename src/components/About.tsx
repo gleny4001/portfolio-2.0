@@ -1,6 +1,6 @@
-import sanDiego from "../assets/SanDiegoCoast.jpg"
-import park from '../assets/park.jpg';
-import city from "../assets/city.jpg";
+import sanDiego from "../assets/about/SanDiegoCoast.jpg"
+import park from '../assets/about/park.jpg';
+import city from "../assets/about/city.jpg";
 interface Image {
     src: string;
     alt: string;
@@ -16,7 +16,7 @@ const About:React.FC = () =>{
     ]
 
     return (
-        <div className = "flex flex-wrap min-h-screen justify-center sm:space-x-20">
+        <div className = "flex flex-wrap h-fit justify-center sm:space-x-20">
              {images.map((image, index) => (
         <div key={index} className="group h-96 w-80 [perspective:1000px]">
           <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"   style={{ marginTop: `${index * 80}px` }}
