@@ -1,5 +1,5 @@
 import sanDiego from "../assets/SanDiegoCoast.jpg"
-import art from '../assets/art.jpg';
+import park from '../assets/park.jpg';
 import city from "../assets/city.jpg";
 interface Image {
     src: string;
@@ -10,7 +10,7 @@ interface Image {
 const About:React.FC = () =>{
     const images: Image[] = [
         {src: sanDiego, alt : "San Diego Coast", back:"Hi, my name is Glen. I'm a frontend developer based in San Diego, currently pursuing a Computer Science degree at San Diego State University. "},
-        {src: art, alt:'white paint art', back:"hello"},
+        {src: park, alt:'balboa park', back:"hello"},
         {src: city, alt:"san diego city", back:""},
 
     ]
