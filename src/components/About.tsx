@@ -16,7 +16,7 @@ const About:React.FC = () =>{
     ]
 
     return (
-        <div className = "flex flex-wrap h-fit justify-center sm:space-x-20">
+        <div className = "flex flex-wrap max-h-screen justify-center sm:space-x-20">
              {images.map((image, index) => (
         <div key={index} className="group h-96 w-80 [perspective:1000px]">
           <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"   style={{ marginTop: `${index * 80}px` }}

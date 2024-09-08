@@ -55,14 +55,17 @@ const Work: React.FC = () => {
     ];
 
     return (
-        <div className="w-full mt-80">
-            <h1 className="font-bold text-5xl mb-8 pl-20">Work Experience.</h1>
-
-            <div className="relative flex items-center p-20">
+        <div className="w-full mt-80 overflow-hidden">
+            <div className="flex justify-center items-center flex-col">
+                <div className="w-1/2 text-left">
+            <h1 className="font-bold text-5xl mb-8">Work Experience.</h1>
+            </div>
+            <div className="relative flex items-center justify-center p-20">
                 {/* Use ref for horizontal scroll control */}
-                <div ref={workHistoryRef} className="w-full h-full lg:overflow-x-scroll lg:whitespace-nowrap no-scrollbar">
+                
+                <div ref={workHistoryRef} className="lg:w-1/2 h-full lg:overflow-x-scroll lg:whitespace-nowrap no-scrollbar lg:space-x-10">
                     {workHistory.map((item, index) => (
-                        <div key={index} className="p-4 inline-block lg:w-[700px] hover:scale-105 ease-in-out duration-300 pr-20">
+                        <div key={index} className="p-4 inline-block lg:w-[700px] hover:scale-105 ease-in-out duration-300">
                             <hr className="w-full h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
                             <p>{item.date}</p>
                             <div className="flex-row flex pt-10">
@@ -74,6 +77,7 @@ const Work: React.FC = () => {
                         </div>
                     ))}
                 </div>
+            </div>
             </div>
         </div>
     );
