@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import dlab from "../assets/work/DLab.png";
+import dlab from "../assets/work/dlab.png";
 import mercedes from "../assets/work/mercedes.png";
 import specialforce from "../assets/work/specialforce.png";
 
