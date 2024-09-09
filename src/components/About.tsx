@@ -9,9 +9,9 @@ interface Image {
 
 const About:React.FC = () =>{
     const images: Image[] = [
-        {src: sanDiego, alt : "San Diego Coast", back:"I'm a frontend developer based in San Diego, currently pursuing a Computer Science degree at San Diego State University. My journey is shaped by the discipline and resilience I developed as a member of the 1st Airborne Special Forces Brigade (2020-2022), where I honed my skills in leadership and problem-solving under pressure."},
-        {src: park, alt:'balboa park', back:"With technical expertise gained during my time as a software engineering intern at Mercedes-Benz, where I specialized in automation and application development, I’ve developed a passion for creating efficient solutions. Additionally, I’m working as a frontend developer at SDSU’s Digital Innovation Lab, where I’m building an AI career mentorship platform from scratch, using React, Tailwind CSS, and Django."},
-        {src: city, alt:"san diego city", back:"Beyond coding, my passions extend to art, design, and cars. I also enjoy staying active through outdoor activities like working out, camping, hiking, and skiing. With a unique blend of military precision and corporate experience, I’m driven to create meaningful impact in both the tech industry and my personal life."},
+        {src: sanDiego, alt : "San Diego Coast", back:"Hey! I’m Glen, a frontend developer and Computer Science student at San Diego State University. But before I dove into the world of coding, I spent two years in the 1st Airborne Special Forces Brigade. Yes, I jumped out of planes and learned to face challenges head-on with discipline and resilience!"},
+        {src: park, alt:'balboa park', back:"When I’m not coding, you’ll find me expressing my creative side through music and design. I have a passion for cars and love getting hands-on with creative projects that push my design skills. I believe creativity fuels innovation—whether on a canvas or in my code"},
+        {src: city, alt:"san diego city", back:"I’m all about staying active and exploring the world around me. Whether it’s working out, camping, hiking, or skiing, I’m always ready for the next adventure. Life’s too short to sit still, and I’m constantly on the lookout for my next challenge—both in and out of the tech world!"},
 
     ]
 
@@ -31,7 +31,7 @@ const About:React.FC = () =>{
             </div>
             {/* Back Side */}
             <div className="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-              <p className="mt-36">{image.back}</p>
+              <p className="mt-16">{image.back}</p>
             </div>
           </div>
         </div>
