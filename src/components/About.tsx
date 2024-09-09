@@ -9,9 +9,9 @@ interface Image {
 
 const About:React.FC = () =>{
     const images: Image[] = [
-        {src: sanDiego, alt : "San Diego Coast", back:"Hi, my name is Glen. I'm a frontend developer based in San Diego, currently pursuing a Computer Science degree at San Diego State University. "},
-        {src: park, alt:'balboa park', back:"hello"},
-        {src: city, alt:"san diego city", back:""},
+        {src: sanDiego, alt : "San Diego Coast", back:"I'm a frontend developer based in San Diego, currently pursuing a Computer Science degree at San Diego State University. My journey is shaped by the discipline and resilience I developed as a member of the 1st Airborne Special Forces Brigade (2020-2022), where I honed my skills in leadership and problem-solving under pressure."},
+        {src: park, alt:'balboa park', back:"With technical expertise gained during my time as a software engineering intern at Mercedes-Benz, where I specialized in automation and application development, I’ve developed a passion for creating efficient solutions. Additionally, I’m working as a frontend developer at SDSU’s Digital Innovation Lab, where I’m building an AI career mentorship platform from scratch, using React, Tailwind CSS, and Django."},
+        {src: city, alt:"san diego city", back:"Beyond coding, my passions extend to art, design, and cars. I also enjoy staying active through outdoor activities like working out, camping, hiking, and skiing. With a unique blend of military precision and corporate experience, I’m driven to create meaningful impact in both the tech industry and my personal life."},
 
     ]
 
