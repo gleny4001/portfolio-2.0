@@ -73,7 +73,7 @@ const Work: React.FC = () => {
                                 <h2 className="text-2xl pl-4 ">{item.title}</h2>
                             </div>
                             <h3 className="text-gray-500">{item.work}</h3>
-                            <p className='text-wrap'>{item.description}</p>
+                            <p className='text-wrap font-montserrat'>{item.description}</p>
                         </div>
                     ))}
                 </div>
