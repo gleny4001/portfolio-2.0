@@ -57,9 +57,9 @@ const Work: React.FC = () => {
     return (
         <div className="w-full mt-80 overflow-hidden">
             <div className="flex justify-center items-center flex-col">
-                <div className="w-1/2 text-left">
-            <h1 className="font-bold text-5xl mb-8">Work Experience.</h1>
-            </div>
+   
+            <h1 className="w-1/2 font-bold text-5xl mb-8">Work Experience.</h1>
+       
             <div className="relative flex items-center justify-center p-20">
                 {/* Use ref for horizontal scroll control */}
                 

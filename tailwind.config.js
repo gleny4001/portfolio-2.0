@@ -49,6 +49,10 @@ export default {
     fontFamily: {
       'abrilFatface': ['Abril Fatface'],
       'montserrat':['Montserrat']
+    },
+
+    backgroundImage:{
+      circularLight: 'repeating-radial-gradient(rgba(0,0,0,0.3) 4px,#fffaf0 14px, #fffaf0 105px);'
     }
     
   },
