@@ -26,7 +26,7 @@ const Skills:React.FC = () =>{
     return (
         <div className="w-full flex items-center justify-center flex-col">
         <h2 className="font-bold text-5xl mt-64 w-1/2">Skills.</h2>
-            <div className='w-3/4  relative flex items-center justify-center rounded-full bg-circularLight'
+            <div className='w-1/2  relative flex items-center justify-center rounded-full bg-circularLight'
                style={{ height: "calc(100vh - 400px)" }}>
 
                 <motion.div 
@@ -34,17 +34,18 @@ const Skills:React.FC = () =>{
                 className='flex cursor-pointer items-center justify-center rounded-full font-semibold bg-black text-white p-8 shadow-dark'>
                     web
                 </motion.div>                
-                <Skill name="HTML" x="-25vw" y="2vw"/>
-                <Skill name="CSS" x="-5vw" y="-10vw"/>
-                <Skill name="Javascript" x="20vw" y="6vw"/>
-                <Skill name="Typescript" x="0vw" y="12vw"/>
-                <Skill name="Python" x="-20vw" y="-15vw"/>
-                <Skill name="React" x="15vw" y="-12vw"/>
-                <Skill name="Node.js" x="32vw" y="-5vw"/>
-                <Skill name="Web design" x="0" y="-20vw"/>
-                <Skill name="Figma" x="-5vw" y="-10vw"/>
-                <Skill name="Tailwind CSS" x="25vw" y="20vw"/>
-                <Skill name="Figma" x="-25vw" y="18vw"/>
+                <Skill name="HTML" x="-15vw" y="1vw" />
+                <Skill name="CSS" x="-3vw" y="-8vw" />
+                <Skill name="Javascript" x="12vw" y="4vw" />
+                <Skill name="Typescript" x="0vw" y="15vw" />
+                <Skill name="Python" x="-10vw" y="-12vw" />
+                <Skill name="React" x="10vw" y="-10vw" />
+                <Skill name="Node.js" x="20vw" y="-3vw" />
+                <Skill name="Web design" x="0vw" y="-20vw" />
+                <Skill name="Figma" x="-4vw" y="-8vw" />
+                <Skill name="Tailwind CSS" x="15vw" y="12vw" />
+                <Skill name="SQL" x="-15vw" y="14vw" />
+
             </div>
         </div>
     )
