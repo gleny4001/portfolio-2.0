@@ -55,7 +55,7 @@ const Work: React.FC = () => {
     ];
 
     return (
-        <div className="w-full mt-80 overflow-hidden">
+        <div id="work" className="w-full mt-80 overflow-hidden">
             <div className="flex justify-center items-center flex-col">
    
             <h1 className="w-1/2 font-bold text-5xl mb-8">Work Experience.</h1>

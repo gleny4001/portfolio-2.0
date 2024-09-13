@@ -24,7 +24,7 @@ const Skill:FC<SkillProps> = ({name, x, y}) => {
 const Skills:React.FC = () =>{
 
     return (
-        <div className="w-full flex items-center justify-center flex-col">
+        <div id="skills" className="w-full flex items-center justify-center flex-col">
         <h2 className="font-bold text-5xl mt-64 w-1/2">Skills.</h2>
             <div className='w-1/2  relative flex items-center justify-center rounded-full bg-circularLight'
                style={{ height: "calc(100vh - 400px)" }}>
@@ -44,7 +44,7 @@ const Skills:React.FC = () =>{
                 <Skill name="Web design" x="0vw" y="-20vw" />
                 <Skill name="Figma" x="-4vw" y="-8vw" />
                 <Skill name="Tailwind CSS" x="15vw" y="12vw" />
-                <Skill name="SQL" x="-15vw" y="14vw" />
+                <Skill name="Git" x="-15vw" y="14vw" />
 
             </div>
         </div>

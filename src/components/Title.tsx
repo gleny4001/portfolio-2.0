@@ -2,7 +2,7 @@ import React from 'react';
 
 const Title: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-between py-40 min-h-max">
+    <div id="home" className="flex flex-col items-center justify-between py-40 min-h-max">
       <div className="w-fit">
         <div className="flex items-start text-left space-y-8">
           <h1 className="text-6xl md:text-9xl lg:text-[10rem] font-bold leading-tight overflow-hidden">
