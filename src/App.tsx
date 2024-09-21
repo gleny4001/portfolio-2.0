@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Work from "./components/Work";
 import Skills from "./components/Skills";
 import Nav from "./components/Nav";
+import Education from "./components/Education";
 function App() {
 
 
@@ -14,7 +15,9 @@ function App() {
       <About/>
       <Work/>
       <Skills/>
+      <Education/>
       <Nav/>
+
     </div>
   )
 }

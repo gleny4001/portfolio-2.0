@@ -1,6 +1,5 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { a } from 'framer-motion/client';
 
 interface TabProps {
   href: string;
@@ -75,6 +74,9 @@ const Nav: React.FC = () => {
       </Tab>
       <Tab setPosition={setPosition} href="#skills" className="text-lg font-medium text-gray-700 hover:text-blue-500">
         Skills
+      </Tab>
+      <Tab setPosition={setPosition} href="#Education" className="text-lg font-medium text-gray-700 hover:text-blue-500">
+        Education
       </Tab>
       <Cursor position={position} />
     </ul>

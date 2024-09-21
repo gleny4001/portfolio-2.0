@@ -26,7 +26,7 @@ const Skills:React.FC = () =>{
     return (
         <div id="skills" className="w-full flex items-center justify-center flex-col">
         <h2 className="font-bold text-5xl mt-64 w-1/2">Skills.</h2>
-            <div className='w-1/2  relative flex items-center justify-center rounded-full bg-circularLight'
+            <div className='sm:w-full lg:w-1/2 relative flex items-center justify-center rounded-full bg-circularLight'
                style={{ height: "calc(100vh - 400px)" }}>
 
                 <motion.div 
