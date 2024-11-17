@@ -5,6 +5,7 @@ import Work from "./components/Work";
 import Skills from "./components/Skills";
 import Nav from "./components/Nav";
 import Education from "./components/Education";
+import MainProject from "./components/Projects/MainProject";
 function App() {
 
 
@@ -15,6 +16,7 @@ function App() {
       <About/>
       <Work/>
       <Skills/>
+      <MainProject/>
       <Education/>
       <Nav/>
 

@@ -1,4 +1,5 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useState } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import dlab from "../assets/work/dlab.png";
 import mercedes from "../assets/work/mercedes.png";
 import specialforce from "../assets/work/specialforce.png";
@@ -8,27 +9,11 @@ interface WorkExperiences {
     title: string;
     work: string;
     description: string;
-    logo: JSX.Element; // Keep this as JSX.Element to allow rendering images
+    logo: JSX.Element;
 }
 
 const Work: React.FC = () => {
-    const workHistoryRef = useRef<HTMLDivElement>(null); // useRef to reference the scrollable container
-
-    // Effect to handle horizontal scroll on vertical scroll wheel
-    useEffect(() => {
-        const scrollContainer = workHistoryRef.current;
-
-        if (scrollContainer) {
-            const handleWheel = (event: WheelEvent) => {
-                event.preventDefault(); // Prevent the default vertical scroll
-                scrollContainer.scrollLeft += event.deltaY; // Scroll horizontally by the amount of vertical scroll
-            };
-
-            scrollContainer.addEventListener('wheel', handleWheel);
-
-            return () => scrollContainer.removeEventListener('wheel', handleWheel); // Cleanup on unmount
-        }
-    }, []);
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     const workHistory: WorkExperiences[] = [
         {
@@ -54,30 +39,86 @@ const Work: React.FC = () => {
         }
     ];
 
+    const nextSlide = () => {
+        setCurrentIndex((prevIndex) => 
+            prevIndex === workHistory.length - 1 ? 0 : prevIndex + 1
+        );
+    };
+
+    const prevSlide = () => {
+        setCurrentIndex((prevIndex) => 
+            prevIndex === 0 ? workHistory.length - 1 : prevIndex - 1
+        );
+    };
+
     return (
-        <div id="work" className="w-full mt-80 overflow-hidden">
-            <div className="flex justify-center items-center flex-col">
-   
-            <h1 className="w-1/2 font-bold text-5xl mb-8">Work Experience.</h1>
-       
-            <div className="relative flex items-start justify-center p-20">
-                {/* Use ref for horizontal scroll control */}
+        <div id="work" className="w-full mt-80">
+            <div className="max-w-6xl mx-auto px-8">
+                <h1 className="font-bold text-5xl mb-16 text-center">Work Experience.</h1>
                 
-                <div ref={workHistoryRef} className=" lg:w-1/2 h-full lg:overflow-x-scroll lg:whitespace-nowrap no-scrollbar lg:space-x-10">
-                    {workHistory.map((item, index) => (
-                        <div key={index} className="pt-4 inline-block lg:w-[700px] hover:scale-105 ease-in-out duration-300">
-                            <hr className="w-full h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
-                            <p>{item.date}</p>
-                            <div className="flex-row flex pt-10">
-                                {item.logo}  
-                                <h2 className="text-2xl pl-4 ">{item.title}</h2>
+                <div className="relative">
+                    {/* Main carousel container */}
+                    <div className="relative overflow-hidden rounded-xl p-8 px-16">
+                        <div className="transition-transform duration-500 ease-out"
+                             style={{ transform: `translateX(-${currentIndex * 200}%)` }}>
+                            <div className="flex">
+                                {workHistory.map((item, index) => (
+                                    <div key={index} 
+                                         className="w-full flex-shrink-0 px-4"
+                                         style={{ transform: `translateX(${index * 100}%)` }}>
+                                        <div className="space-y-6">
+                                            {/* Date badge */}
+                                            <div className="inline-block px-4 py-2 bg-gray-100 rounded-full text-sm font-medium">
+                                                {item.date}
+                                            </div>
+                                            
+                                            {/* Title and logo section */}
+                                            <div className="flex items-center space-x-4">
+                                                <div className="p-2 bg-gray-50 rounded-lg">
+                                                    {item.logo}
+                                                </div>
+                                                <div>
+                                                    <h2 className="text-2xl font-bold">{item.title}</h2>
+                                                    <h3 className="text-gray-600">{item.work}</h3>
+                                                </div>
+                                            </div>
+                                            
+                                            {/* Description */}
+                                            <p className="text-gray-700 leading-relaxed">
+                                                {item.description}
+                                            </p>
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
-                            <h3 className="text-gray-500">{item.work}</h3>
-                            <p className='text-wrap font-montserrat'>{item.description}</p>
                         </div>
-                    ))}
+
+                        {/* Navigation arrows */}
+                        <button 
+                            onClick={prevSlide}
+                            className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white shadow-lg hover:bg-gray-50 transition-colors">
+                            <ChevronLeft className="w-6 h-6" />
+                        </button>
+                        <button 
+                            onClick={nextSlide}
+                            className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white shadow-lg hover:bg-gray-50 transition-colors">
+                            <ChevronRight className="w-6 h-6" />
+                        </button>
+
+                        {/* Dot indicators */}
+                        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex space-x-2 ">
+                            {workHistory.map((_, index) => (
+                                <button
+                                    key={index}
+                                    onClick={() => setCurrentIndex(index)}
+                                    className={`w-2 h-2 rounded-full transition-colors ${
+                                        index === currentIndex ? 'bg-gray-800' : 'bg-gray-300'
+                                    }`}
+                                />
+                            ))}
+                        </div>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     );
