@@ -66,16 +66,19 @@ const Nav: React.FC = () => {
       }
       className="fixed bottom-10 left-1/2 transform -translate-x-1/2 mx-auto flex w-fit rounded-full border-2 border-black bg-white p-1"
     >
-      <Tab setPosition={setPosition} href="#home" className="text-lg font-medium text-gray-700 hover:text-blue-500">
+      <Tab setPosition={setPosition} href="#home" className="text-lg font-medium text-gray-700 ">
         Home
       </Tab>
-      <Tab setPosition={setPosition} href="#work" className="text-lg font-medium text-gray-700 hover:text-blue-500">
+      <Tab setPosition={setPosition} href="#work" className="text-lg font-medium text-gray-700 ">
         Work
       </Tab>
-      <Tab setPosition={setPosition} href="#skills" className="text-lg font-medium text-gray-700 hover:text-blue-500">
+      <Tab setPosition={setPosition} href="#skills" className="text-lg font-medium text-gray-700 ">
         Skills
       </Tab>
-      <Tab setPosition={setPosition} href="#Education" className="text-lg font-medium text-gray-700 hover:text-blue-500">
+      <Tab setPosition={setPosition} href="#projects" className="text-lg font-medium text-gray-700 ">
+        Projects
+      </Tab>
+      <Tab setPosition={setPosition} href="#Education" className="text-lg font-medium text-gray-700 ">
         Education
       </Tab>
       <Cursor position={position} />
