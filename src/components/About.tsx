@@ -1,6 +1,6 @@
-import sanDiego from "../assets/about/SanDiegoCoast.jpg"
-import park from '../assets/about/park.jpg';
-import city from "../assets/about/city.jpg";
+import sanDiego from "/assets/about/SanDiegoCoast.jpg"
+import park from '/assets/about/park.jpg';
+import city from "/assets/about/city.jpg";
 interface Image {
     src: string;
     alt: string;

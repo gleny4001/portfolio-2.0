@@ -1,4 +1,4 @@
-import SDSULogo from '../assets/education/SDSU.png';
+import SDSULogo from '/assets/education/SDSU.png';
 
 const Education: React.FC = () => {
     return (

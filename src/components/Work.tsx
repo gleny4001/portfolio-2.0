@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import dlab from "../assets/work/dlab.png";
-import mercedes from "../assets/work/mercedes.png";
-import specialforce from "../assets/work/specialforce.png";
+import dlab from "/assets/work/dlab.png";
+import mercedes from "/assets/work/mercedes.png";
+import specialforce from "/assets/work/specialforce.png";
 
 interface WorkExperiences {
     date: string;

@@ -1,5 +1,5 @@
-import GitHubIcon from '../assets/header/github';
-import LinkedInIcon from '../assets/header/linkedin';
+import GitHubIcon from '../../public/assets/header/github';
+import LinkedInIcon from '../../public/assets/header/linkedin';
 const Header: React.FC = () => {
     return (
       <header className="w-full h-14 flex justify-between items-center px-4">

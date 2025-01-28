@@ -1,6 +1,6 @@
-import BeachSideVideo from "../../assets/project/beachside.mp4";
-import TeslaVideo from "../../assets/project/tesla.mp4";
-import menteligent from "../../assets/project/menteligent.mp4"
+import BeachSideVideo from "/assets/project/beachside.mp4";
+import TeslaVideo from "/assets/project/tesla.mp4";
+import menteligent from "/assets/project/menteligent.mp4"
 type Project = {
   id: number;
   title: string;
