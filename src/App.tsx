@@ -6,6 +6,8 @@ import Skills from "./components/Skills";
 import Nav from "./components/Nav";
 import Education from "./components/Education";
 import MainProject from "./components/Projects/MainProject";
+import AIChat from "./components/AIChat";
+
 function App() {
 
 
@@ -19,7 +21,7 @@ function App() {
       <MainProject/>
       <Education/>
       <Nav/>
-
+      <AIChat/>
     </div>
   )
 }
