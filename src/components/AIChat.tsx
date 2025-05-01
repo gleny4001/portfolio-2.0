@@ -23,9 +23,7 @@ const AIChat = () => {
   const [input, setInput] = useState('');
   const {
     sendMessage,
-    response,
     loading,
-    error,
   } = useChatAI();
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
   const chatRef = useRef<HTMLDivElement | null>(null);
