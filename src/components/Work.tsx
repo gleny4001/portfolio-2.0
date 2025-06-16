@@ -18,9 +18,9 @@ const Work: React.FC = () => {
     const workHistory: WorkExperiences[] = [
         {
             date: "May 2024-current",
-            title: "Frontend Developer",
+            title: "Software Engineer",
             work: "San Diego State University Digital Innovation Lab",
-            description: "As a frontend developer at SDSU Digital Innovation Lab, I lead the development of an AI-powered career mentorship platform for enterprises. Utilizing React, Tailwind CSS, and Django, I build scalable and responsive UI components. I also collaborate with cross-functional teams and deploy applications to Azure, ensuring seamless integration and performance across platforms.",
+            description: "As a software engineer at SDSU Digital Innovation Lab, I lead the development of an AI-powered career mentorship platform for enterprises. Utilizing React, Tailwind CSS, and Django, I build scalable and responsive UI components. I also collaborate with cross-functional teams and deploy applications to Azure, ensuring seamless integration and performance across platforms.",
             logo: <img src={dlab} alt="DLab Logo" className="w-10 h-10 rounded-lg" />
         },
         {
